@@ -14,3 +14,7 @@ wget http://download.skype.com/linux/skype-ubuntu-precise_4.2.0.13-1_i386.deb
 sudo gdebi skype-ubuntu-precise_4.2.0.13-1_i386.deb
 
 sudo gdebi dropbox_1.6.0_amd64.deb
+
+sudo apt-add-repository ppa:fish-shell/release-2
+sudo apt-get update
+sudo apt-get install fish
