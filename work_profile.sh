@@ -18,3 +18,10 @@ sudo gdebi dropbox_1.6.0_amd64.deb
 sudo apt-add-repository ppa:fish-shell/release-2
 sudo apt-get update
 sudo apt-get install fish
+
+gedit /etc/apt/sources.list
+# add this line
+# deb http://cran.rstudio.com/bin/linux/ubuntu trusty/
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+sudo apt-get update
+sudo apt-get install r-base r-base-dev
