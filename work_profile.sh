@@ -41,3 +41,8 @@ sudo add-apt-repository -y ppa:richardgv/compton
 sudo add-apt-repository -y ppa:gottcode/gcppa
 sudo apt update
 sudo apt install ambiance-colors radiance-colors xfce4-dockbarx-plugin dockbarx-themes-extra compton
+
+# LAMP
+sudo apt-get install apache2 mysql-server php5 libapache2-mod-php5 filezilla
+sudo /etc/init.d/apache2 restart
+php -r 'echo "\n\nYour PHP installation is working fine.\n\n\n";'
