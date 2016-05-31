@@ -33,3 +33,11 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 sudo apt-get update
 sudo apt-get install r-base r-base-dev
 
+# Appearance
+sudo add-apt-repository -y ppa:ravefinity-project/ppa
+sudo add-apt-repository -y ppa:tiheum/equinox
+sudo add-apt-repository -y ppa:nilarimogard/webupd8
+sudo add-apt-repository -y ppa:richardgv/compton
+sudo add-apt-repository -y ppa:gottcode/gcppa
+sudo apt update
+sudo apt install ambiance-colors radiance-colors xfce4-dockbarx-plugin dockbarx-themes-extra compton
