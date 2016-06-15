@@ -34,6 +34,7 @@ sudo apt-get update
 sudo apt-get install r-base r-base-dev
 
 # Appearance
+sudo apt-get install ubuntu-artwork # ubuntu-ish theme
 sudo add-apt-repository -y ppa:ravefinity-project/ppa
 sudo add-apt-repository -y ppa:tiheum/equinox
 sudo add-apt-repository -y ppa:nilarimogard/webupd8
