@@ -36,6 +36,14 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 sudo apt-get update
 sudo apt-get install r-base r-base-dev
 
+# Miniconda for Python
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+# check installation
+conda list
+conda install numpy pandas matplotlib scipy seaborn jupyter
+conda update --all -y
+
 # Appearance
 sudo apt-get install ubuntu-artwork # ubuntu-ish theme
 sudo add-apt-repository -y ppa:ravefinity-project/ppa
