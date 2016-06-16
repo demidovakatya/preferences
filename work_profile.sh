@@ -11,6 +11,9 @@ sudo apt-add-repository ppa:fish-shell/release-2
 sudo apt-get update
 sudo apt-get install fish
 
+# file manager
+sudo apt-get install krusader konsole krename
+
 sudo apt-get install libreoffice gedit
 
 # Sublime Text 3
