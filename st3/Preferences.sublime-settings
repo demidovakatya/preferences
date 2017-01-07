@@ -1,3 +1,8 @@
+// ==========================================
+// Sublime Text user preferences
+// ==========================================
+
+
 {
 	"added_words":
 	[
@@ -47,7 +52,7 @@
 	"caret_extra_width": 0,
 	"caret_style": "smooth",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Colorsublime - Themes/Chelevra.tmTheme",
+	"color_scheme": "Packages/Colorsublime - Themes/Chrome_DevTools.tmTheme",
 	"copy_with_empty_selection": true,
 	"create_window_at_startup": true,
 	"default_encoding": "UTF-8",
@@ -62,7 +67,7 @@
 	"enable_hexadecimal_encoding": true,
 	"enable_tab_scrolling": true,
 	"enable_telemetry": "auto",
-	"ensure_newline_at_eof_on_save": false,
+	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": true,
 	"fallback_encoding": "Western (Windows 1252)",
 	"file_exclude_patterns":
@@ -101,7 +106,7 @@
 	"font_options":
 	[
 	],
-	"font_size": 14,
+	"font_size": 17,
 	"gpu_window_buffer": "auto",
 	"gutter": true,
 	"highlight_line": true,
@@ -109,8 +114,6 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"Anaconda",
-		"IPython Notebook",
 		"knockdown",
 		"Markdown",
 		"Vintage"
@@ -168,7 +171,7 @@
 	"trim_trailing_white_space_on_save": false,
 	"use_simple_full_screen": false,
 	"use_tab_stops": true,
-	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
+	"word_separators": "./\\()\"'-_:,.;<>~!@#$%^&*|+=[]{}`~?",
 	"word_wrap": "true",
 	"wrap_width": 100
 }
