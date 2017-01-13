@@ -1,0 +1,43 @@
+/* 
+Anaconda: http://damnwidget.github.io/anaconda/
+
+Anaconda is a plugin that turns your SublimeText 3 into a rich featured Python development stack that boost your productivity and helps you to ensure the quality and style of your code.
+*/
+
+
+{
+    // "load-save" - Linting works in file load and save only
+     "anaconda_linting_behaviour": "load-save",
+
+     /*
+         If 'outline' (default), anaconda will outline error lines.
+         If 'fill', anaconda will fill the lines.
+         If 'solid_underline', anaconda will draw a solid underline below regions.
+         If 'stippled_underline', anaconda will draw a stippled underline below regions.
+         If 'squiggly_underline', anaconda will draw a squiggly underline below regions.
+         If 'none', anaconda will not draw anything on error lines.
+     */
+     "anaconda_linter_mark_style": "solid_underline",
+
+     // If this is set to false, anaconda will not underline errors.
+     "anaconda_linter_underlines": false,
+
+     // "anaconda_linter_show_errors_on_save": true
+
+        // The minimum delay in seconds (fractional seconds are okay) before
+        // a linter is run when the "anaconda_linting" setting is true. 
+    "anaconda_linter_delay": 2,
+
+    // basic -> circle, everything else -> triangle with !
+    "anaconda_gutter_theme": "basic",
+    // fill, outline or none
+
+    /*
+        A list of pep8 error numbers to ignore.
+        The list of error codes is in this file: https://github.com/jcrocholl/pep8/blob/master/pep8.py.
+        Search for "Ennn:", where nnn is a 3-digit number.
+    */
+
+    // E501 line too long
+    "pep8_ignore": [ 501 ],
+}
