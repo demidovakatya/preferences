@@ -1,0 +1,73 @@
+# install zsh
+# install oh-my-zsh
+# save as ~/.zshrc
+
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH=~/.oh-my-zsh
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/sbin:$PATH"
+export EDITOR='subl -w'
+
+#                                   THEME
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# ZSH_THEME="theunraveler"
+ZSH_THEME="agnoster"
+# ZSH_THEME="zdj"
+# ZSH_THEME="robbyrussell"
+
+#                                   APPS
+# ---------- venv
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+# ---------- xgboost
+# export PYTHONPATH=~/xgboost/python-package
+
+#                           USER SETTINGS
+# CASE_SENSITIVE="true"
+# COMPLETION_WAITING_DOTS="true" # red dots whilst waiting
+# DISABLE_AUTO_TITLE="true" # disable auto-setting terminal title.
+# DISABLE_AUTO_UPDATE="true"
+# DISABLE_LS_COLORS="true" # disable colors in ls.
+# export ARCHFLAGS="-arch x86_64" # Compilation flags
+# export MANPATH="/usr/local/man:$MANPATH" # User configuration
+# export SSH_KEY_PATH="~/.ssh/dsa_id" # ssh
+# export UPDATE_ZSH_DAYS=13 # how often to auto-update (in days).
+# HIST_STAMPS="dd.mm.yyyy" # date format, "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# HYPHEN_INSENSITIVE="true"
+# ZSH_CUSTOM=/path/to/new-custom-folder # use another custom folder
+# DISABLE_UNTRACKED_FILES_DIRTY="true" # disable marking untracked files under VCS as dirty
+# ENABLE_CORRECTION="true" # enable command auto-correction.
+export LANG=en_US.UTF8 # set your language environment
+
+
+#                           PLUGINS
+# ---------- LOAD (plugins can be found in ~/.oh-my-zsh/plugins/*)
+plugins=(git colored-man colorize github virtualenvwrapper pip python zsh-syntax-highlighting zsh-completions)
+
+# ---------- OMZ
+source $ZSH/oh-my-zsh.sh
+# ---------- zsh-completions 
+# To activate these completions, add the following to your .zshrc:
+# fpath=(/usr/local/share/zsh-completions $fpath)
+# completion
+# fpath=(~/.zshfuncs $fpath)
+# autoload -U compinit && compinit -y
+# source ~/.git-completion.bash
+# ---------- zsh-autosuggestions 
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# ---------- zsh-syntax-highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+
+# ---------   ALIASES
+alias zshconfig="subl ~/.zshrc"
+alias ohmyzsh="subl ~/.oh-my-zsh"
+
+
+
