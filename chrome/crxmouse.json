@@ -1,0 +1,258 @@
+{
+  "cfgver": 2.3,
+  "drag": {
+    "ddirect": true,
+    "ddirectcolor": "5E6A88",
+    "ddirectopa": 0.9,
+    "dholdkey": "none",
+    "dragimage": true,
+    "draginput": false,
+    "draglink": true,
+    "dragtext": true,
+    "dragui": true,
+    "dstroke": true,
+    "dstrokecolor": "4E1485",
+    "dstrokeopa": 0.8,
+    "dstrokewidth": 5,
+    "dtooltip": true,
+    "dtooltipcolor": "120310",
+    "dtooltipopa": 0.9,
+    "dtooltipwidth": 18,
+    "image": [
+      {
+        "action": "I_open",
+        "direct": "L",
+        "moreDes": "Open image in new tab(New tab & Background)",
+        "morePinned": "unpinned",
+        "morePosition": "chrome",
+        "moreTarget": "newback"
+      },
+      {
+        "action": "I_open",
+        "direct": "R",
+        "moreDes": "Open image in new tab(New tab & Front)",
+        "morePinned": "unpinned",
+        "morePosition": "chrome",
+        "moreTarget": "newfront"
+      },
+      {
+        "action": "I_save",
+        "direct": "D"
+      }
+    ],
+    "imgfirst": "none",
+    "imgfirstcheck": false,
+    "link": [
+      {
+        "action": "L_open",
+        "direct": "L",
+        "moreDes": "Open link in new tab(New tab & Background)",
+        "morePinned": "unpinned",
+        "morePosition": "chrome",
+        "moreTarget": "newback"
+      },
+      {
+        "action": "L_open",
+        "direct": "R",
+        "moreDes": "Open link in new tab(New tab & Front)",
+        "morePinned": "unpinned",
+        "morePosition": "chrome",
+        "moreTarget": "newfront"
+      },
+      {
+        "action": "L_copytext",
+        "direct": "D"
+      },
+      {
+        "action": "L_copyurl",
+        "direct": "U"
+      }
+    ],
+    "setdragurl": true,
+    "text": [
+      {
+        "action": "T_search",
+        "direct": "L",
+        "moreDes": "Use %name to search \"%s\"(New tab & Background)",
+        "morePinned": "unpinned",
+        "morePosition": "chrome",
+        "moreTarget": "newback",
+        "moreTsearch": "sgoogle"
+      },
+      {
+        "action": "T_search",
+        "direct": "R",
+        "moreDes": "Use %name to search \"%s\"(New tab & Front)",
+        "morePinned": "unpinned",
+        "morePosition": "chrome",
+        "moreTarget": "newfront",
+        "moreTsearch": "sgoogle"
+      },
+      {
+        "action": "T_copytext",
+        "direct": "D"
+      }
+    ]
+  },
+  "gesture": {
+    "direct": true,
+    "directcolor": "5E6A88",
+    "directopa": "0.8",
+    "gesPos": "cc",
+    "geskey": "middle",
+    "gesture": [
+      {
+        "action": "G_go",
+        "direct": "L"
+      },
+      {
+        "action": "G_back",
+        "direct": "R"
+      },
+      {
+        "action": "G_top",
+        "direct": "U"
+      },
+      {
+        "action": "G_bottom",
+        "direct": "D"
+      },
+      {
+        "action": "G_reclosedtab",
+        "direct": "LU",
+        "moreDes": "Reopen closed tab",
+        "morePinned": "unpinned",
+        "morePosition": "chrome",
+        "moreTarget": "newfront"
+      },
+      {
+        "action": "G_bottom",
+        "direct": "RD"
+      },
+      {
+        "action": "G_top",
+        "direct": "RU"
+      },
+      {
+        "action": "G_reload",
+        "direct": "UD"
+      },
+      {
+        "action": "G_reloadclear",
+        "direct": "UDU"
+      },
+      {
+        "action": "G_lefttab",
+        "direct": "UL"
+      },
+      {
+        "action": "G_righttab",
+        "direct": "UR"
+      },
+      {
+        "action": "G_newwindow",
+        "direct": "DRU"
+      },
+      {
+        "action": "G_crxsettings",
+        "direct": "RDLU",
+        "moreDes": "CrxMouse settings",
+        "morePinned": "unpinned",
+        "morePosition": "chrome",
+        "moreTarget": "newfront"
+      }
+    ],
+    "gestureui": true,
+    "gholdkey": "none",
+    "stenable": false,
+    "stroke": true,
+    "strokecolor": "5E6A88",
+    "strokeopa": 0.8,
+    "strokewidth": "7",
+    "tooltip": true,
+    "tooltipcolor": "120310",
+    "tooltipopa": "1",
+    "tooltipwidth": "22"
+  },
+  "normal": {
+    "autocancel": false,
+    "autocancelvalue": 2,
+    "cancelcontextmenu": true,
+    "capturetype": "jpeg",
+    "dbclicktime": 600,
+    "drag": true,
+    "gesture": true,
+    "jpegquality": 100,
+    "lasttab": false,
+    "minilength": 10,
+    "newtabposition": "chrome",
+    "scroll": false,
+    "scrolleffects": false,
+    "scrollgesture": false,
+    "strokegesture": false
+  },
+  "others": {
+    "tuilink": false
+  },
+  "scroll": {
+    "scrollaccele": 1,
+    "scrollspeed": 3,
+    "smooth": false
+  },
+  "scrollgesture": {
+    "fastSwitch": false,
+    "reverseFS": false,
+    "sgsleft": [
+      {
+        "action": "G_top"
+      },
+      {
+        "action": "G_bottom"
+      }
+    ],
+    "sgsleftenable": true,
+    "sgsright": [
+      {
+        "action": "G_top"
+      },
+      {
+        "action": "G_bottom"
+      }
+    ],
+    "sgsrightenable": false,
+    "tablist": true,
+    "tablistVisual": true,
+    "tablistkey": "right"
+  },
+  "strokegesture": {
+    "strleft": [
+      {
+        "action": "G_none"
+      },
+      {
+        "action": "G_righttab"
+      }
+    ],
+    "strleftenable": true,
+    "strmiddle": [
+      {
+        "action": "G_lefttab"
+      },
+      {
+        "action": "G_righttab"
+      }
+    ],
+    "strmiddleenable": false,
+    "strpress": "up",
+    "strright": [
+      {
+        "action": "G_lefttab"
+      },
+      {
+        "action": "G_none"
+      }
+    ],
+    "strrightenable": true
+  },
+  "sync": true
+}
