@@ -1,0 +1,53 @@
+{
+    "bootstrapped": true,
+    "in_process_packages":
+    [
+    ],
+    "installed_packages":
+    [
+        "Package Control",
+
+        "Colorsublime",
+        "Theme - El Capitan",
+        "Theme - SoDaReloaded",
+        // "Tomorrow Color Schemes",
+
+        "SideBarFolders",
+        "SidebarSeparator",
+
+        "Dotfiles Syntax Highlighting",
+        // "TodoReview",
+        "TrailingSpaces",
+        
+        "Pretty JSON",
+
+        "knockdown",
+        "Markdown Preview",
+        "MarkdownEditing",
+
+        "HTMLBeautify",
+        "SCSS",
+        // "JavaScript Completions",
+        
+        "Jekyll",
+        
+        "Python 3",
+        "Anaconda", 
+        "AutoDocstring",
+        "Python Fix Imports",
+        // "AutoPEP8",
+        // "Python Completions",
+        // "Python PEP8 Autoformat",
+        // "Inline Python",
+        // "IPython Notebook",
+        // "SublimeLinter-pep8",
+       
+        "GitDiffHelper",
+        "Gitignore",
+        // "Jedi - Python autocompletion",
+        
+    ],
+    "repositories":
+    [
+    ]
+}
