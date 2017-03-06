@@ -1,0 +1,12 @@
+" turn on syntax highlightning
+syntax on
+
+" set colorscheme to one of those in ~/.vim/colors
+colorscheme candy
+
+" maintain undo history between sessions
+set undofile
+set undodir=~/.vim/undo
+set noswapfile
+
+
