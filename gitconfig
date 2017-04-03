@@ -1,0 +1,39 @@
+[user]
+	name = Name Lastname
+	email = e@ma.il
+[core]
+	# Sublime Text 3 will be launched
+	# -w:The command line will wait until the commit message is saved.
+	editor = subl --wait
+
+[alias]
+	s = status
+	ci = commit
+	amend = commit --amend --reuse-message=HEAD
+	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+
+	# Show verbose output about tags, branches or remotes
+	tags = tag -l
+	branches = branch -a
+	remotes = remote -v
+
+[color]
+	ui = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = blue bold
+	frag = cyan bold # line info
+	old = red # deletions
+	new = green # additions
+[color "status"]
+	untracked = yellow
+
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[push]
+	default = simple
