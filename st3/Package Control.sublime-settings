@@ -28,7 +28,6 @@
         "HTMLBeautify",
         "SCSS",
         // "JavaScript Completions",
-        
         "Jekyll",
         
         "Python 3",
@@ -41,10 +40,10 @@
         // "Inline Python",
         // "IPython Notebook",
         // "SublimeLinter-pep8",
+        // "Jedi - Python autocompletion",
        
         "GitDiffHelper",
         "Gitignore",
-        // "Jedi - Python autocompletion",
         
     ],
     "repositories":
