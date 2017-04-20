@@ -1,12 +1,30 @@
-" turn on syntax highlightning
 syntax on
 
+filetype on
+au BufNewFile,BufRead *.hlq set filetype=sql
+au BufNewFile,BufRead *.q set filetype=sql
+
+execute pathogen#infect()
+" filetype plugin indent on
+
+
 " set colorscheme to one of those in ~/.vim/colors
-colorscheme candy
+colorscheme eink
 
 " maintain undo history between sessions
 set undofile
 set undodir=~/.vim/undo
 set noswapfile
 
+" Centralize backups, swapfiles and undo history
+set directory=~/.vim/swaps
+set backupdir=~/.vim/backups
 
+" Allow backspace in insert mode
+set backspace=indent,eol,start
+
+" Show the filename in the window titlebar
+set title
+
+" Show line numbers
+set nu

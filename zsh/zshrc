@@ -12,9 +12,7 @@ export PATH="/usr/local/sbin:$PATH"
 export EDITOR='subl -w'
 
 #                                   THEME
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="theunraveler"
 # ZSH_THEME="agnoster"
 # ZSH_THEME="zdj"
@@ -40,32 +38,68 @@ export LANG=en_US.UTF8 # set your language environment
 
 #                           PLUGINS
 # ---------- LOAD (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(git colored-man colorize github virtualenv pip python brew osx zsh-syntax-highlighting zsh-completions)
+plugins=(git colored-man-pages colorize github virtualenv pip python brew osx zsh-syntax-highlighting zsh-completions)
 
 # ---------- OMZ
 source $ZSH/oh-my-zsh.sh
 # ---------- zsh-completions 
 # To activate these completions, add the following to your .zshrc:
+fpath=(usr/local/share/zsh/site-functions $fpath)
 # fpath=(/usr/local/share/zsh-completions $fpath)
+# /bin/zsh -f -c ' $fpath'
 # completion
 # fpath=(~/.zshfuncs $fpath)
 # autoload -U compinit && compinit -y
-# source ~/.git-completion.bash
 # ---------- zsh-autosuggestions 
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # ---------- zsh-syntax-highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# ---------- zsh-git-prompt
+source "/usr/local/opt/zsh-git-prompt/zshrc.sh"
+# ---------- bash-completions
+source /usr/local/etc/profile.d/bash_completion.sh
 
 # venv
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 # xgboost
 export PYTHONPATH=~/xgboost/python-package
+# pyspark https://gist.github.com/ololobus/4c221a0891775eaa86b0
+if which pyspark > /dev/null; then
+  export SPARK_HOME="/usr/local/Cellar/apache-spark/2.1.0/libexec/"
+  # export PYSPARK_SUBMIT_ARGS="--master local[2]"
+fi
+# iterm2  
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# bashmarks https://github.com/Bilalh/shellmarks
+source ~/.local/bin/shellmarks.sh
 
 
 # ---------   ALIASES
+# alias sudo pip3="sudo python3 -m pip"
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
+alias jup="jupyter notebook"
+alias hstart="/usr/local/opt/hadoop/sbin/start-dfs.sh;/usr/local/opt/hadoop/sbin/start-yarn.sh"
+alias hstop="/usr/local/opt/hadoop/sbin/stop-yarn.sh;/usr/local/opt/hadoop/sbin/stop-dfs.sh"
+alias gs='git status'
 
+# thefuck
+eval "$(thefuck --alias)"
 
+. /Users/mac/torch/install/bin/torch-activate
+
+function setjdk() {
+  if [ $# -ne 0 ]; then
+   removeFromPath '/System/Library/Frameworks/JavaVM.framework/Home/bin'
+   if [ -n "${JAVA_HOME+x}" ]; then
+    removeFromPath $JAVA_HOME
+   fi
+   export JAVA_HOME=`/usr/libexec/java_home -v $@`
+   export PATH=$JAVA_HOME/bin:$PATH
+  fi
+ }
+function removeFromPath() {
+  export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")
+}
 
