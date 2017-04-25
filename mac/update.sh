@@ -5,10 +5,11 @@
 brew update
 brew upgrade
 brew cleanup
+brew cask cleanup
 
 # Update Python packages
-pip2 freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 sudo -H pip2 install -U
-pip3 freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 sudo -H pip3 install -U
+pip2 freeze --local | grep -v '^\-e' | cut -d = -f 1  | sudo xargs -n1 sudo -H pip2 install -U
+pip3 freeze --local | grep -v '^\-e' | cut -d = -f 1  | sudo xargs -n1 sudo -H pip3 install -U
 
 
 # # Update npm & packages
