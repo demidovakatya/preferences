@@ -1,1 +1,1 @@
-.vimrc
+/Users/mac/.vimrc
