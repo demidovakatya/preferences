@@ -1,6 +1,6 @@
 [user]
-	name = Sunshine
-	email = e.m@il.com
+	name = Katya
+	email = demidovakatya@gmail.com
 [core]
 	# Sublime Text 3 will be launched
 	# -w:The command line will wait until the commit message is saved.
@@ -18,7 +18,7 @@
 	remotes = remote -v
 
 [color]
-	ui = auto
+	ui = true
 [color "branch"]
 	current = yellow reverse
 	local = yellow
