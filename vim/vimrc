@@ -5,6 +5,8 @@ filetype on
 
 au BufNewFile,BufRead *.hlq set filetype=sql
 au BufNewFile,BufRead *.q set filetype=sql
+au BufNewFile,BufRead *.kt set filetype=kotlin
+
 " Allow backspace in insert mode
 set backspace=indent,eol,start
 " buffers / files
