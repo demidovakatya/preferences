@@ -113,6 +113,6 @@ function json() {
 # `less` with options to preserve color and line numbers, unless the output is
 # small enough for one screen.
 function tre() {
-  tree -aC -I '.git|.DS_Store|.idea|.ipynb_checkpoints|.RData|.Rhistory' --dirsfirst "$@" | less -FRNX;
+  tree -aC -I '.git|.Trash|.DS_Store|.idea|.ipynb_checkpoints|.RData|.Rhistory' --dirsfirst "$@" | less -FRNX;
 }
 
