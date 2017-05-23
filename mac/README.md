@@ -20,13 +20,18 @@
     - zsh-completions: [Additional completion definitions for zsh](https://github.com/zsh-users/zsh-completions)
     - zsh-syntax-highlighting: [Fish shell like syntax highlighting for zsh](https://github.com/zsh-users/zsh-syntax-highlightin)
 - [zsh & oh-my-zsh](https://github.com/demidovakatya/preferences/tree/master/zsh)
-- vi, vim, sublime, iterm2
-- safari, telegram, slack
-- dropbox
-- bear (for notes)
+- vi/vim
+- sublime text 3
+- [iterm2](https://github.com/demidovakatya/preferences/tree/master/iterm2)
+- safari
+- telegram 
+- slack
+- box
+- [bear](http://www.bear-writer.com) (for notes)
 - nice tiny apps:
-    - magnet
-    - hazeover
-    - day-O
-    - cheatsheet
+    - [magnet](http://magnet.crowdcafe.com)
+    - [hazeover](https://hazeover.com)
+    - [day-O](https://shauninman.com/archive/2016/10/20/day_o_2_mac_menu_bar_clock)
+    - [cheatsheet](https://www.cheatsheetapp.com)
+    - [copia](http://www.dollaropath.com/copia/)
 
