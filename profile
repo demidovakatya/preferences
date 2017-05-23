@@ -3,9 +3,11 @@
 # ==========================================
 
 # global settings
-export LC_ALL=en_US.UTF8
-export LANG=en_US.UTF8
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 export EDITOR='subl -w'
+
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin"
 
 # Load the shell dotfiles, and then some:
 for file in ~/.{path,exports,aliases,functions,extra}; do
@@ -17,7 +19,7 @@ unset file;
 BREW_DIR="$(brew --prefix)"
 BREW_SHARE=$BREW_DIR/share
 export PATH=$BREW_DIR/bin:$BREW_DIR/sbin:$PATH
-export MANPATH=$BREW_DIR/share/man:$MANPATH
+export MANPATH=$BREW_SHARE/man:$MANPATH
 
 # Add tab completion for many Bash commands
 if which brew &> /dev/null && [ -f "$BREW_SHARE/bash-completion/bash_completion" ]; then
@@ -27,7 +29,7 @@ elif [ -f /etc/bash_completion ]; then
 fi;
 
 # Enable tab completion for `g` by marking it as an alias for `git`
-if type _git &> /dev/null && [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
+if type _git &> /dev/null && [ -f "/usr/local/etc/bash_completion.d/git-completion.bash" ]; then
     complete -o default -o nospace -F _git g;
 fi;
 
@@ -36,24 +38,35 @@ source "$BREW_SHARE/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 source "/usr/local/opt/zsh-git-prompt/zshrc.sh"
 
 fpath=(usr/local/share/zsh/site-functions $fpath)
-# fpath=(/usr/local/share/zsh-completions $fpath)
+fpath=(/usr/local/share/zsh-completions $fpath)
 # /bin/zsh -f -c ' $fpath'
 # completion
 # autoload -U compinit && compinit -y
 fpath=(~/.zsh $fpath)
 
+# export PYTHONPATH=`brew --prefix`/lib/python2.7/site-packages
+export PIP_CONFIG_FILE="/Users/mac/Library/Application Support/pip/pip.conf"
+
+export HADOOP_HOME="/usr/local/Cellar/hadoop/2.8.0"
+export PATH="$PATH:$HADOOP_HOME/bin"
+export HADOOP_CONF_DIR="$HADOOP_HOME/libexec/etc/hadoop"
+export HIVE_HOME="/usr/local/Cellar/hive/2.1.0/libexec"
+export PATH="$PATH:$HIVE_HOME/bin"
+export HIVE_CONF_DIR="$HIVE_HOME/conf"
+
+# Java
+# export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home
+export JAVA_HOME=$(/usr/libexec/java_home)
+# export PATH=$PATH:$JAVA_HOME/bin
+
 # iterm2  
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-export PYTHONPATH=~/itermplot:$PYTHONPATH
+# export PYTHONPATH="$HOME/itermplot:$PYTHONPATH"
+export PYTHONPATH="$HOME/itermplot"
 export MPLBACKEND="module://itermplot"
 
 # bashmarks https://github.com/Bilalh/shellmarks
 source ~/.local/bin/shellmarks.sh
-
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-export PATH="/usr/local/sbin:$PATH"
-export PIP_CONFIG_FILE="/Users/mac/Library/Application Support/pip/pip.conf"
-
 
 # thefuck
 eval "$(thefuck --alias)"
