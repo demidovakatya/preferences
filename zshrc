@@ -26,3 +26,4 @@ plugins=(git github pip python \
 # compinit -i
 source $ZSH/oh-my-zsh.sh
 source ~/.functions
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
