@@ -13,7 +13,6 @@ alias vi="vim"
 alias la="ls -lah" # rS
 alias stfu="osascript -e 'set volume output muted true'"
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
-alias xlsx2csv="/usr/local/lib/python3.6/site-packages/xlsx2csv.py"
 alias weather="curl wttr.in"
 
 # Easier navigation: .., ..., ...., ....., ~ and -
