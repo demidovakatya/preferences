@@ -22,8 +22,8 @@ export PATH=$BREW_DIR/bin:$BREW_DIR/sbin:$PATH
 export MANPATH=$BREW_SHARE/man:$MANPATH
 
 # Add tab completion for many Bash commands
-if which brew &> /dev/null && [ -f "$BREW_SHARE/bash-completion/bash_completion" ]; then
-    source "$BREW_SHARE/bash-completion/bash_completion";
+if which brew &> /dev/null && [ -f "$BREW_SHARE/bash-completion/completions" ]; then
+    source "$BREW_SHARE/bash-completion/completions";
 elif [ -f /etc/bash_completion ]; then
     source /etc/bash_completion;
 fi;
