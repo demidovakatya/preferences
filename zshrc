@@ -17,6 +17,7 @@ plugins=(git github pip python \
         brew brew-cask osx \
         zsh-syntax-highlighting \
         zsh-completions \
+        zsh-autosuggestions \
         colored-man-pages colorize thefuck)
 
 
