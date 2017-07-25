@@ -35,10 +35,15 @@ fi;
 
 source "$BREW_SHARE/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "$BREW_SHARE/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-source "/usr/local/opt/zsh-git-prompt/zshrc.sh"
+# source "/usr/local/opt/zsh-git-prompt/zshrc.sh"
 
 fpath=(usr/local/share/zsh/site-functions $fpath)
 fpath=(/usr/local/share/zsh-completions $fpath)
+zstyle ':completion:*:*:git:*' script ~/.zsh/functions/_git
+# `compinit` scans $fpath, so do this before calling it.
+fpath=(~/.zsh/functions $fpath)
+autoload -Uz compinit && compinit
+
 # /bin/zsh -f -c ' $fpath'
 # completion
 # autoload -U compinit && compinit -y
