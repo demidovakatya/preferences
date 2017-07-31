@@ -62,7 +62,11 @@ export HIVE_CONF_DIR="$HIVE_HOME/conf"
 # Java
 # export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home
 export JAVA_HOME=$(/usr/libexec/java_home)
-# export PATH=$PATH:$JAVA_HOME/bin
+export SCALA_HOME=$BREW_DIR/Cellar/scala/2.12.3
+# export SPARK_HOME=$BREW_DIR/Cellar/spark/1.0.1
+export SPARK_HOME=$BREW_DIR/Cellar/apache-spark/2.2.0/libexec
+export PATH=$PATH:$JAVA_HOME/bin:$SPARK_HOME/bin:$SCALA_HOME/bin
+
 
 # iterm2  
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
