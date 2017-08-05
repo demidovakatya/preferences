@@ -35,3 +35,6 @@
     - [cheatsheet](https://www.cheatsheetapp.com)
     - [copia](http://www.dollaropath.com/copia/)
 
+
+Files in this directory:
+* `turnthelight-off-mac-env-casksearch.txt` - [source](https://github.com/MichaelDimmitt/my_mac_environment/blob/master/casksearch.txt)
