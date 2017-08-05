@@ -1,13 +1,17 @@
 #!/usr/bin/env bash
 
-# manpdf
-# mkd = mkdir + cd
-# cdf = cd + finder
-# targz = -> .tar.gz
-# extract
-# fs = du [with options]
-# json
-# tre
+# ==========================================
+#     .functions 
+# 
+#  - manpdf
+#  - mkd = mkdir + cd
+#  - cdf = cd + finder
+#  - targz = -> .tar.gz
+#  - extract
+#  - fs = du [with options]
+#  - json
+#  - tre
+# ==========================================
 
 
 # Open man page as PDF

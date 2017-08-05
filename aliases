@@ -14,6 +14,16 @@ alias la="ls -lah" # rS
 alias stfu="osascript -e 'set volume output muted true'"
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 alias weather="curl wttr.in"
+alias g="git"
+alias h="history"
+alias j="jobs"
+alias duh="du -d 1 -h"
+alias dua="du -ah"
+
+# Shortcuts
+alias d="cd ~/Documents"
+alias dl="cd ~/Downloads"
+alias w="cd ~/Work"
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
@@ -23,23 +33,14 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
-# Shortcuts
-alias d="cd ~/Documents"
-alias dl="cd ~/Downloads"
-alias w="cd ~/Work"
-alias g="git"
-alias h="history"
-alias j="jobs"
-alias duh="du -d 1 -h"
-alias dua="du -ah"
 
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
 # Update stuff
-alias update-pip3="pip3 list --outdated | cut -d ' ' -f 1  | xargs -n1 sudo -H pip3 install | lolcat"
-alias update-pip2="pip2 list --outdated | cut -d ' ' -f 1  | xargs -n1 sudo -H pip2 install | lolcat"
+alias update-pip3="pip3 list -o | cut -d ' ' -f1  | xargs sudo -H pip3 install -U | lolcat"
+alias update-pip2="pip2 list -o | cut -d ' ' -f1  | xargs sudo -H pip2 install -U | lolcat"
 alias update-brew="brew update | lolcat; brew upgrade | lolcat"
 
 # Kill all the tabs in Chrome to free up memory
