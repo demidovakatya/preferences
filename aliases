@@ -39,8 +39,8 @@ alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && kill
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
 # Update stuff
-alias update-pip3="pip3 list --outdated --format=legacy | cut -d ' ' -f1  | xargs sudo -H pip3 install -U | lolcat"
-alias update-pip2="pip2 list --outdated --format=legacy | cut -d ' ' -f1  | xargs sudo -H pip2 install -U | lolcat"
+update-pip2='pip2 list --outdated --format=legacy | cut -d " " -f1  | xargs sudo -H pip2 install -U | lolcat'
+update-pip3='pip3 list --outdated --format=legacy | cut -d " " -f1  | xargs sudo -H pip3 install -U | lolcat'
 alias update-brew="brew update | lolcat; brew upgrade | lolcat; brew cleanup; brew cask upgrade"
 
 # Kill all the tabs in Chrome to free up memory
