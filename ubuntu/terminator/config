@@ -1,0 +1,231 @@
+[global_config]
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  handle_size = 0
+  suppress_multiple_term_dialog = True
+  title_font = Fira Code 12
+  title_receive_fg_color = "#c8c8c8"
+  title_transmit_bg_color = "#456973"
+  title_use_system_font = False
+[keybindings]
+  help = None
+  new_window = <Primary><Shift>n
+  next_tab = <Primary><Alt>Right
+  prev_tab = <Primary><Alt>Left
+  switch_to_tab_1 = <Primary>1
+  switch_to_tab_2 = <Primary>2
+  switch_to_tab_3 = <Primary>3
+  switch_to_tab_4 = <Primary>4
+  switch_to_tab_5 = <Primary>5
+  switch_to_tab_6 = <Primary>6
+[layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = edf6ab58-0dbf-4e98-943f-5006b2088e03
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 65:24
+      size = 1855, 1056
+      title = katya@SPB-COMP005: ~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 926
+      ratio = 0.499191374663
+      type = HPaned
+    [[[child3]]]
+      order = 1
+      parent = child1
+      position = 528
+      ratio = 0.5
+      type = VPaned
+    [[[terminal2]]]
+      directory = ""
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 7ce060af-ee9e-47ba-b815-e36c90cfddab
+    [[[terminal4]]]
+      command = ""
+      directory = /home/katya/Documents/sber/alpha/hive_queries
+      order = 0
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = 1b294519-3c42-4980-adb0-f40085da4ce5
+    [[[terminal5]]]
+      command = ssh demidova@java08.local
+      directory = ""
+      order = 1
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = edf6ab58-0dbf-4e98-943f-5006b2088e03
+  [[defaultest]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 7ce060af-ee9e-47ba-b815-e36c90cfddab
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 65:24
+      size = 1855, 1056
+      title = katya@SPB-COMP005: ~
+      type = Window
+    [[[terminal1]]]
+      order = 0
+      parent = child0
+      profile = default
+      type = Terminal
+      uuid = 7ce060af-ee9e-47ba-b815-e36c90cfddab
+  [[many_terminals]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 65:24
+      size = 1855, 1056
+      title = katya@SPB-COMP005: ~
+      type = Window
+    [[[child1]]]
+      active_page = 6
+      labels = SSH, None, hive_queries, stats, None, None, None
+      last_active_term = 70c51a99-d1f8-4f06-ab35-7680dbd1ea0c, 8fcd0de5-9d0a-4714-aca0-096a3117efd3, 02702529-7d22-4c1f-bb82-e8664e35f248, a1f854de-1bc7-499e-85fc-1775c24e378b, dff0c957-00dd-458e-bb56-1ac2c19cc2ce, 3e11f11b-7ede-48bc-8085-500052840493, 48e78cf3-c5a1-4359-8f18-a7bf280681dc
+      order = 0
+      parent = child0
+      type = Notebook
+    [[[terminal2]]]
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 70c51a99-d1f8-4f06-ab35-7680dbd1ea0c
+    [[[terminal3]]]
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 8fcd0de5-9d0a-4714-aca0-096a3117efd3
+    [[[terminal4]]]
+      order = 2
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 02702529-7d22-4c1f-bb82-e8664e35f248
+    [[[terminal5]]]
+      order = 3
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = a1f854de-1bc7-499e-85fc-1775c24e378b
+    [[[terminal6]]]
+      order = 4
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = dff0c957-00dd-458e-bb56-1ac2c19cc2ce
+    [[[terminal7]]]
+      order = 5
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 3e11f11b-7ede-48bc-8085-500052840493
+    [[[terminal8]]]
+      order = 6
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 48e78cf3-c5a1-4359-8f18-a7bf280681dc
+  [[one]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 7ce060af-ee9e-47ba-b815-e36c90cfddab
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 65:24
+      size = 1855, 1056
+      title = katya@SPB-COMP005: ~
+      type = Window
+    [[[terminal1]]]
+      order = 0
+      parent = child0
+      profile = default
+      type = Terminal
+      uuid = 7ce060af-ee9e-47ba-b815-e36c90cfddab
+  [[other]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 1b294519-3c42-4980-adb0-f40085da4ce5
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 65:24
+      size = 1855, 1056
+      title = katya@SPB-COMP005: ~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 925
+      ratio = 0.498652291105
+      type = HPaned
+    [[[child3]]]
+      order = 1
+      parent = child1
+      position = 528
+      ratio = 0.5
+      type = VPaned
+    [[[terminal2]]]
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 7ce060af-ee9e-47ba-b815-e36c90cfddab
+    [[[terminal4]]]
+      order = 0
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = 1b294519-3c42-4980-adb0-f40085da4ce5
+    [[[terminal5]]]
+      order = 1
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = edf6ab58-0dbf-4e98-943f-5006b2088e03
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#002b36"
+    background_image = None
+    copy_on_selection = True
+    cursor_color = "#85b3bf"
+    font = Ubuntu Mono 12
+    foreground_color = "#dcdcdc"
+    palette = "#073642:#ea5350:#f48e56:#ffe89d:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#d16c42:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    scroll_on_output = False
+    scrollback_lines = 15000
+    use_system_font = False
+  [[New Profile 2]]
+    background_image = None
+  [[solarized_dark]]
+    background_color = "#002b36"
+    background_image = None
+    copy_on_selection = True
+    cursor_color = "#2f778a"
+    font = Fira Code 12
+    foreground_color = "#c2d8db"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    scroll_on_output = False
+    scrollback_lines = 10000
+    use_system_font = False
