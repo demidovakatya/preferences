@@ -53,7 +53,10 @@ source "$BREW_SHARE/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 # source "/usr/local/opt/zsh-git-prompt/zshrc.sh"
 
 # Python
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+export PYTHON_HOME="/usr/local/lib"
 # export PYTHONPATH=`brew --prefix`/lib/python2.7/site-packages
+# export PYTHONPATH="$PYTHONPATH:/usr/local/lib/python3.6/site-packages"
 export PIP_CONFIG_FILE="/Users/mac/Library/Application Support/pip/pip.conf"
 
 # Hadoop & Hive
@@ -75,8 +78,7 @@ export PATH=$PATH:$JAVA_HOME/bin:$SPARK_HOME/bin:$SCALA_HOME/bin
 
 # iterm2  
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-# export PYTHONPATH="$HOME/itermplot:$PYTHONPATH"
-export PYTHONPATH="$HOME/itermplot"
+export PYTHONPATH="$PYTHONPATH:itermplot"
 export MPLBACKEND="module://itermplot"
 
 # Other nice tools:
