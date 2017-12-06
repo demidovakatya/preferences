@@ -40,4 +40,6 @@ Anaconda is a plugin that turns your SublimeText 3 into a rich featured Python d
 
     // E501 line too long
     "pep8_ignore": [ 501 ],
+    "python_interpreter": "python3",
 }
+
