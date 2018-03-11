@@ -161,11 +161,11 @@ Contains everything from the file with Default Key Bindings.
     { "keys": ["super+l"], "command": "expand_selection", "args": {"to": "line"} },
     { "keys": ["super+d"], "command": "find_under_expand" },
     { "keys": ["super+k", "super+d"], "command": "find_under_expand_skip" },
-    { "keys": ["super+shift+space"], "command": "expand_selection", "args": {"to": "scope"} },
+    { "keys": ["ctrl+shift+space"], "command": "expand_selection", "args": {"to": "scope"} },
     { "keys": ["ctrl+shift+m"], "command": "expand_selection", "args": {"to": "brackets"} },
     { "keys": ["ctrl+m"], "command": "move_to", "args": {"to": "brackets"} },
-    { "keys": ["super+shift+j"], "command": "expand_selection", "args": {"to": "indentation"} },
-    { "keys": ["super+shift+a"], "command": "expand_selection", "args": {"to": "tag"} },
+    { "keys": ["ctrl+shift+j"], "command": "expand_selection", "args": {"to": "indentation"} },
+    { "keys": ["ctrl+shift+a"], "command": "expand_selection", "args": {"to": "tag"} },
 
     { "keys": ["super+alt+."], "command": "close_tag" },
 
