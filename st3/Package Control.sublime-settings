@@ -6,47 +6,50 @@
     "installed_packages":
     [
         "Package Control",
-
-        "Colorsublime",
-        "Theme - El Capitan",
-        "Theme - SoDaReloaded",
-        // "Tomorrow Color Schemes",
-
-        "SideBarFolders",
-        "SidebarSeparator",
-
+        
+        "Anaconda",
+        "AutoDocstring",
+        "Ghost Snippets",
+        "Python 3",
+        "Python Fix Imports",
+        
+        "Git Config",
         "Dotfiles Syntax Highlighting",
-        // "TodoReview",
+        "FileManager",
+        "TabsExtra",
+        "SidebarSeparator",
         "TrailingSpaces",
+        "TodoReview",
+        "Marking Changed Rows",
+        "DashDoc",
+        "ReadmePlease",
+
+        "RemoteEdit",
+
+        "SublimeLinter",
+        "SublimeLinter-contrib-yaml-lint",
+        "SublimeLinter-contrib-yamllint",
+        "SublimeLinter-html-tidy",
+        "SublimeLinter-pep8",
+        "SublimeLinter-shellcheck",
+
+        "ZSH",
+        "HTMLBeautify",
+        "Crontab Syntax",
+        "Markdown Extended",
+        
+        "Material Theme",
+        "Theme - El Capitan",
         
         "Pretty JSON",
-
-        "knockdown",
-        "Markdown Preview",
-        "MarkdownEditing",
-
-        "HTMLBeautify",
-        "SCSS",
-        // "JavaScript Completions",
-        "Jekyll",
+        "rainbow_csv"
         
-        "Python 3",
-        "Anaconda", 
-        "AutoDocstring",
-        "Python Fix Imports",
-        // "AutoPEP8",
-        // "Python Completions",
-        // "Python PEP8 Autoformat",
-        // "Inline Python",
-        // "IPython Notebook",
-        // "SublimeLinter-pep8",
-        // "Jedi - Python autocompletion",
-       
-        "GitDiffHelper",
-        "Gitignore",
-        
-    ],
-    "repositories":
-    [
+        // "Readme-Helper",
+        // "SyntaxManager",
+
+        // "Javascript Beautify",
+        // "JavaScript Refactor",
+        // "LESS",
+        // "Handlebars",
     ]
 }
