@@ -1,8 +1,3 @@
-// ==========================================
-// Sublime Text user preferences
-// ==========================================
-
-
 {
 	"added_words":
 	[
@@ -52,7 +47,7 @@
 	"caret_extra_width": 0,
 	"caret_style": "smooth",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Colorsublime - Themes/Chrome_DevTools.tmTheme",
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
 	"copy_with_empty_selection": true,
 	"create_window_at_startup": true,
 	"default_encoding": "UTF-8",
@@ -60,7 +55,7 @@
 	"detect_indentation": true,
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"drag_text": true,
-	"draw_centered": true,
+	"draw_centered": false,
 	"draw_indent_guides": true,
 	"draw_minimap_border": false,
 	"draw_white_space": "selection",
@@ -102,11 +97,12 @@
 		".hg",
 		"CVS"
 	],
-	"font_face": "Menlo",
+	"font_face": "Fira Code",
 	"font_options":
 	[
+		"no_italic"
 	],
-	"font_size": 17,
+	"font_size": 13,
 	"gpu_window_buffer": "auto",
 	"gutter": true,
 	"highlight_line": true,
@@ -141,6 +137,21 @@
 	"match_brackets_square": true,
 	"match_selection": true,
 	"match_tags": true,
+	"material_theme_accent_lime": false,
+	"material_theme_accent_pink": true,
+	"material_theme_accent_scrollbars": true,
+	"material_theme_accent_titlebar": true,
+	"material_theme_big_fileicons": true,
+	"material_theme_bright_scrollbars": true,
+	"material_theme_bullet_tree_indicator": true,
+	"material_theme_compact_panel": true,
+	"material_theme_contrast_mode": true,
+	"material_theme_disable_folder_animation": true,
+	"material_theme_panel_separator": true,
+	"material_theme_small_statusbar": true,
+	"material_theme_small_tab": true,
+	"material_theme_tabs_separator": true,
+	"material_theme_titlebar": true,
 	"move_to_limit_on_up_down": false,
 	"open_files_in_new_window": false,
 	"overlay_scroll_bars": "system",
@@ -148,7 +159,10 @@
 	"remember_full_screen": true,
 	"rulers":
 	[
-		80
+		70,
+		80,
+		100,
+		120
 	],
 	"save_on_focus_lost": false,
 	"scroll_past_end": true,
@@ -164,14 +178,14 @@
 	"spelling_selector": "markup.raw, source string.quoted - punctuation - meta.preprocessor.c.include, source comment - source comment.block.preprocessor, -(source, constant, keyword, storage, support, variable, markup.underline.link, meta.tag)",
 	"tab_completion": true,
 	"tab_size": 4,
-	"theme": "El Capitan.sublime-theme",
+	"theme": "Material-Theme.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"tree_animation_enabled": true,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": false,
 	"use_simple_full_screen": false,
 	"use_tab_stops": true,
-	"word_separators": "./\\()\"'-_:,.;<>~!@#$%^&*|+=[]{}`~?",
+	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
 	"word_wrap": "true",
-	"wrap_width": 100
+	"wrap_width": 120
 }
