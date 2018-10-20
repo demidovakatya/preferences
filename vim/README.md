@@ -10,3 +10,18 @@ cp -R ./syntax ~/.vim/
 
 source ~/.vimrc
 ```
+
+## `pathogen`
+
+installation:
+
+```sh
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+```
+add this to your `~/.vimrc`
+
+```
+execute pathogen#infect()
+```
+
