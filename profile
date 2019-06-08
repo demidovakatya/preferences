@@ -52,6 +52,9 @@ source "$BREW_SHARE/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "$BREW_SHARE/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 # source "/usr/local/opt/zsh-git-prompt/zshrc.sh"
 
+# libexec
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+
 # Python
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export PYTHON_HOME="/usr/local/lib"
@@ -70,6 +73,12 @@ export MPLBACKEND="module://itermplot"
 source ~/.local/bin/shellmarks.sh
 # thefuck
 eval "$(thefuck --alias)"
+
+# node & nvm
+export PATH="/usr/local/opt/node@6/bin:$PATH"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
 # ---------- OMZ
