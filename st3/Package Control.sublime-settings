@@ -6,44 +6,37 @@
     "installed_packages":
     [
         "Package Control",
-        
+
+        "Advanced CSV",
         "Anaconda",
         "AutoDocstring",
-        "Ghost Snippets",
-        "Python 3",
-        "Python Fix Imports",
-        
-        "Git Config",
+        "Crontab Syntax",
+        "DashDoc",
         "Dotfiles Syntax Highlighting",
         "FileManager",
-        "TabsExtra",
-        "SidebarSeparator",
-        "TrailingSpaces",
-        "TodoReview",
+        "Ghost Snippets",
+        "Git Config",
+        "HTMLBeautify",
+        "Markdown Extended",
         "Marking Changed Rows",
-        "DashDoc",
+        "Material Theme",
+        "Pretty JSON",
+        "Python 3",
+        "Python Fix Imports",
+        "rainbow_csv",
         "ReadmePlease",
-
         "RemoteEdit",
-
+        "SidebarSeparator",
         "SublimeLinter",
-        "SublimeLinter-contrib-yaml-lint",
-        "SublimeLinter-contrib-yamllint",
         "SublimeLinter-html-tidy",
         "SublimeLinter-pep8",
         "SublimeLinter-shellcheck",
-
-        "ZSH",
-        "HTMLBeautify",
-        "Crontab Syntax",
-        "Markdown Extended",
-        
-        "Material Theme",
+        "TabsExtra",
         "Theme - El Capitan",
-        
-        "Pretty JSON",
-        "rainbow_csv"
-        
+        "TodoReview",
+        "TrailingSpaces",
+        "ZSH"
+
         // "Readme-Helper",
         // "SyntaxManager",
 
